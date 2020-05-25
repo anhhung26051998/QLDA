@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BTL_QLDAModelStoreContainer" CdmEntityContainer="BTL_QLDAEntities">
+    <EntitySetMapping Name="BanQLDAs">
+      <EntityTypeMapping TypeName="BTL_QLDAModel.BanQLDA">
+        <MappingFragment StoreEntitySet="BanQLDA">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="IdChudautu" ColumnName="IdChudautu" />
+          <ScalarProperty Name="Mabanqlda" ColumnName="Mabanqlda" />
+          <ScalarProperty Name="Tenbanqlda" ColumnName="Tenbanqlda" />
+          <ScalarProperty Name="Diachi" ColumnName="Diachi" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Mota" ColumnName="Mota" />
+          <ScalarProperty Name="Nguoitao" ColumnName="Nguoitao" />
+          <ScalarProperty Name="Ngaytao" ColumnName="Ngaytao" />
+          <ScalarProperty Name="Nguoisua" ColumnName="Nguoisua" />
+          <ScalarProperty Name="Ngaysua" ColumnName="Ngaysua" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

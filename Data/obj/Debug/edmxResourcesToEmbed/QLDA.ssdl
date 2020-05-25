@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BTL_QLDAModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'BTL_QLDA.dbo.BanQLDA' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="BanQLDA">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdChudautu" Type="int" />
+    <Property Name="Mabanqlda" Type="nvarchar" MaxLength="100" />
+    <Property Name="Tenbanqlda" Type="nvarchar(max)" />
+    <Property Name="Diachi" Type="nvarchar(max)" />
+    <Property Name="Email" Type="nvarchar" MaxLength="500" />
+    <Property Name="Phone" Type="nvarchar" MaxLength="50" />
+    <Property Name="Mota" Type="nvarchar(max)" />
+    <Property Name="Nguoitao" Type="nvarchar" MaxLength="150" />
+    <Property Name="Ngaytao" Type="datetime" />
+    <Property Name="Nguoisua" Type="nvarchar" MaxLength="150" />
+    <Property Name="Ngaysua" Type="datetime" />
+  </EntityType>
+  <EntityContainer Name="BTL_QLDAModelStoreContainer">
+    <EntitySet Name="BanQLDA" EntityType="Self.BanQLDA" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [BanQLDA].[ID] AS [ID], 
+    [BanQLDA].[IdChudautu] AS [IdChudautu], 
+    [BanQLDA].[Mabanqlda] AS [Mabanqlda], 
+    [BanQLDA].[Tenbanqlda] AS [Tenbanqlda], 
+    [BanQLDA].[Diachi] AS [Diachi], 
+    [BanQLDA].[Email] AS [Email], 
+    [BanQLDA].[Phone] AS [Phone], 
+    [BanQLDA].[Mota] AS [Mota], 
+    [BanQLDA].[Nguoitao] AS [Nguoitao], 
+    [BanQLDA].[Ngaytao] AS [Ngaytao], 
+    [BanQLDA].[Nguoisua] AS [Nguoisua], 
+    [BanQLDA].[Ngaysua] AS [Ngaysua]
+    FROM [dbo].[BanQLDA] AS [BanQLDA]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>
